@@ -33,7 +33,7 @@ function ContextProvider(props) {
           const secsNum = Number(prevCounterSecs)
           if(secsNum === 0) {
             setCounterMins(prevCounterMins => checkCounterMins(prevCounterMins))
-            return "02"
+            return "59"
           } else if(secsNum > 10) {
             return "" + (secsNum - 1)
           } else {
